@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreateOptionsMenu(menu);
         menu.add(0, 1, 0, "선 추가");
         menu.add(0, 2, 0, "원 추가");
-        //menu.add(0, 3, 0, "사각형 추가");
+        menu.add(0, 3, 0, "사각형 추가");
         return true;
     }
     @Override
@@ -61,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
             case 2 :
                 myview.setShape( MyGraphicView.CIRCLE );  // 원
                 return true;
-            //case 3 :
-            //    myview.setShape( MyGraphicView.RECT );  // 사각형
-            //    return true;
+            case 3 :
+                myview.setShape( MyGraphicView.RECT );  // 사각형
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
